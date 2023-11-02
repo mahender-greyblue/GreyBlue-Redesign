@@ -7,7 +7,7 @@ html, body {
 	color: #000;
 }
 #main{
-    height: 100vh;
+    min-height: 100vh;
     padding: 0% 5%;
 }
 #nav{
@@ -30,19 +30,134 @@ html, body {
     color: #fff;
     width: 100%;
     margin-top: 10px;
-    min-height: 100vh;
-    /* align-items: center; */
-    justify-content: center;
-    display: flex;
-    /* flex-direction: column; */
+    height: 100vh;
+    align-items: center;
+    justify-content: center;    
     padding: 2% 5%;
+    border-radius: 20px;
  }
- #hero img{
+
+ /* #hero img{
+    
     display: block;
     align-items: center;
     justify-content: center;
+    margin-left: 20%;
     transform: translate(40%,40%);
+    margin: 50px;
+ } */
+
+ .hero-logo{
+    position: absolute;
+    left: 35%;
+    /* align-items: center;
+    justify-content: center;
+    transform: translate(50%,50%); */
  }
+ .hero-soon{
+    position: absolute;
+    left: 42%;
+    top: 32%;
+ }
+ .hero-text{
+    position: absolute;
+    left: 28%;
+    top: 40%;
+ }
+ #hero-vid{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    opacity: 0.1;
+ }
+#about-section{
+    height: 60vh;
+    padding: 7vw 0;
+      
+}
+#about-section h1{
+    font-size: 2vw;
+    /* padding: 1vw; */
+}
 
+.about-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+    padding: 1vw 0;
+    
+}
+.about-content img{
+    padding: 2vw;
+    width: 15vw;
+    height: 15vw;
+    margin-left: 5vw;
+}
+.about-content p{
+    width: 50%;
+    font-size: 1vw;
+    text-transform: capitalize;
+}
+.about-content p span{
+    color: red;
+}
+#Impact-section{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    padding: 3vw;
+    overflow: hidden;
+    border-radius: 20px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+#Impact-section h1{
+    text-align: left;
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+.impact{
+    display: flex;
+    /* flex-direction:row-reverse; */
+    gap: 15vw;
+    padding: 2vw;
+    height: 30%;  
+    margin: 1vw; 
+}
+.impact:nth-child(odd){
+    display: flex;
+    flex-direction:row-reverse;
+}
 
+.impact img{
+    border-radius: 5%;
+    width: 20vw;
+    height: 10vw;
+    margin-left: 2vw;
+  
+}
+.impact-text{
+    width: 50%; 
+}
+.impact-text h2{
+    color: red;
+    font-size: 1.5vw;
+}
+.impact-text p{
+    font-size: 1vw;
+}
 
+#impact-nav{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 2vw;
+   }
+#impact-nav i{
+    background-color: #fff;
+    font-size: 1.5vw;
+    color: red;
+    border-radius: 50%;
+}
