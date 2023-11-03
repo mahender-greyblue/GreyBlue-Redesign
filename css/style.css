@@ -19,7 +19,7 @@ html, body {
     padding: 0 25%;
     gap: 50px;
 }
-#nav h1{
+#nav a{
 
     color: grey ;
     font-size: 1.5vw ;
@@ -49,27 +49,44 @@ html, body {
 
  .hero-logo{
     position: absolute;
-    left: 35%;
+    left: 37%;
     /* align-items: center;
     justify-content: center;
     transform: translate(50%,50%); */
  }
  .hero-soon{
     position: absolute;
-    left: 42%;
-    top: 32%;
- }
+    left: 45%;
+    top: 40%;
+    }
+ .hero-soon img{
+   
+        width: 15vw;
+        height: 5vw;
+}  
+
  .hero-text{
     position: absolute;
     left: 28%;
-    top: 40%;
+    top: 50%;
  }
  #hero-vid{
     position: absolute;
-    left: 15%;
-    top: 50%;
-    opacity: 0.1;
- }
+    left: 18%;
+    top: 65%;
+    opacity: 1;
+    
+    /* height: 50%; */
+    width: 80vw;
+    object-fit: cover;
+     }
+     #hero-vid video{
+        /* height: 70%; */
+        width: 80%;
+        clip-path: inset(16px 76px);
+        border-radius: 20%;
+
+     }
 #about-section{
     height: 60vh;
     padding: 7vw 0;
@@ -160,4 +177,132 @@ html, body {
     font-size: 1.5vw;
     color: red;
     border-radius: 50%;
+}
+#spirit{
+    /* background-color: black; */
+    width: 100%;
+    height: 70vh;
+    color: black;
+    padding: 3vw;
+    overflow: hidden;
+    border-radius: 20px;
+    text-transform: capitalize;
+    
+}
+#spirit-vid{
+    display: flex;
+    gap: 15vw;
+}
+#spirit-vid video{
+    width: 30vw;
+
+}
+#spirit-vid p span{
+    color: red;
+    text-decoration: solid;
+}
+#contact-section{
+    display: flex;
+    min-height: 50vh;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+    padding: 1vw;
+}
+#contact-section h1{
+    position: absolute;
+}
+#contact-left{
+    width: 50%;
+    
+}
+#contact-left img{
+    width: 40vw;
+    
+}
+#contact-right{
+    color: #fff;
+}
+
+.form {
+    width: 500px;
+    height: 450px;
+    background: #ee8e8e;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    /* margin: calc(50vh - 220px) auto; */
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+      position: relative;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+  }
+  input:focus {
+    border-bottom: 2px solid #78788c;
+  }
+  p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+  }
+  button {
+    float: right;
+    padding: 8px 12px;
+    /* margin: 8px 0 0; */
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  button:hover {
+    background: #78788c;
+    color: #fff;
+  }
+  /* div {
+    content: "Hi";
+    position: absolute;
+    bottom: -15px;
+    right: -20px;
+    background: #50505a;
+    color: #fff;
+    width: 320px;
+    padding: 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size: 13px;
+    box-shadow: 10px 10px 40px -14px #000;
+  }
+ 
+   */
+
+   #footer{
+    min-height: 30vh;
+    background-color: #000000;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+    padding: 5vw;
+    display: flex;
+    gap: 10vw;
+   }
+
+@media only screen and (max-width: 600px) {
+    #nav{
+        display: none;
+    }
+    
 }
