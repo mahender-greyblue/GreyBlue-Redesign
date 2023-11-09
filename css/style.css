@@ -42,11 +42,13 @@ html, body {
     background-color:#000;
     color: #fff;
     width: 100%;
-    /* margin-top: 10px; */
-    min-height: 30vh;    
+    margin-top: 10px;
+    min-height: 40vh;    
     align-items: center;   
     border-radius: 20px;
     padding: 3vw;
+    /* justify-content: space-evenly; */
+    gap: 3vw;
  }
 .hero-logo{
     /* margin-top: 5%; */
@@ -70,9 +72,9 @@ html, body {
 
  
 #about-section{
-    height: 30vh;
+    min-height: 30vh;
     padding: 2vw 0;
-    margin-bottom: 5vw;  
+    /* margin-bottom: 5vw;   */
 }
 #about-section h1{
     font-size: 2.5vw;
@@ -82,7 +84,7 @@ html, body {
 .about-content{
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     gap: 15vw;
     padding: 1vw 0;
@@ -96,8 +98,9 @@ html, body {
 }
 .about-content p{
     width: 50%;
-    font-size: 1.2vw;
-    text-transform: capitalize;    
+    font-size: 1.3vw;
+    text-transform: capitalize;
+    
 }
 .about-content p span{
     color: red;
@@ -327,6 +330,7 @@ i:hover{
     #about-section{
         padding: 2vw;
         height: 60vh;
+        margin-bottom: 20vw; 
     }
     #about-section h1{
         font-size: 6vw;
@@ -334,7 +338,7 @@ i:hover{
     .about-content{
         flex-direction: column;
         /* height: 30vh; */
-        /* align-items: flex-start; */
+        align-items: center;
         justify-content: flex-start;
         gap: 0;
     }
@@ -345,8 +349,8 @@ i:hover{
     }
     .about-content img{
         padding: 2vw;
-        width: 50vw;
-        height: 50vw;
+        width: 40vw;
+        height: 40vw;
         /* margin-left: 5vw; */
     }
 }
