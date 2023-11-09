@@ -15,85 +15,67 @@ html, body {
     position: relative;
     display: flex;
     align-items:center;
-    /* justify-content: space-between; */
-    padding: 0 25%;
-    gap: 50px;
+    justify-content: center;
+    padding: 5px 0;
+    gap: 4vw;
+}
+
+.ri-menu-line{
+    display: none;
 }
 #nav a{
 
     color: grey ;
     font-size: 1.5vw ;
-    font-weight: 100;    
+    font-weight: 800;    
+    text-decoration: none;
 }
+#nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
 #hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color:#000;
     color: #fff;
     width: 100%;
-    margin-top: 10px;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;    
-    padding: 2% 5%;
+    /* margin-top: 10px; */
+    min-height: 30vh;    
+    align-items: center;   
     border-radius: 20px;
+    padding: 3vw;
  }
-
- /* #hero img{
+.hero-logo{
+    /* margin-top: 5%; */
     
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20%;
-    transform: translate(40%,40%);
-    margin: 50px;
- } */
-
- .hero-logo{
+}
+.hero-logo img{
+    width: 35vw;
+}
+.hero-text{
+    font-size: 1.2vw;
+}
+#hero-vid{
     position: absolute;
-    left: 37%;
-    /* align-items: center;
-    justify-content: center;
-    transform: translate(50%,50%); */
- }
- .hero-soon{
-    position: absolute;
-    left: 45%;
-    top: 40%;
-    }
- .hero-soon img{
-   
-        width: 15vw;
-        height: 5vw;
-}  
-
- .hero-text{
-    position: absolute;
-    left: 28%;
-    top: 50%;
- }
- #hero-vid{
-    position: absolute;
-    left: 18%;
-    top: 65%;
-    opacity: 1;
+    margin-bottom: 100px;
+    display: none;
+}
+#hero-vid video{
+    width: 30vw;
     
-    /* height: 50%; */
-    width: 80vw;
-    object-fit: cover;
-     }
-     #hero-vid video{
-        /* height: 70%; */
-        width: 80%;
-        clip-path: inset(16px 76px);
-        border-radius: 20%;
+}
 
-     }
+ 
 #about-section{
-    height: 60vh;
-    padding: 7vw 0;
-      
+    height: 30vh;
+    padding: 2vw 0;
+    margin-bottom: 5vw;  
 }
 #about-section h1{
-    font-size: 2vw;
+    font-size: 2.5vw;
     /* padding: 1vw; */
 }
 
@@ -101,20 +83,21 @@ html, body {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15vw;
     padding: 1vw 0;
     
 }
 .about-content img{
-    padding: 2vw;
-    width: 15vw;
-    height: 15vw;
-    margin-left: 5vw;
+    /* padding: 2vw; */
+    width: 20vw;
+    height: 20vw;
+    /* margin-left: 5vw; */
 }
 .about-content p{
     width: 50%;
-    font-size: 1vw;
-    text-transform: capitalize;
+    font-size: 1.2vw;
+    text-transform: capitalize;    
 }
 .about-content p span{
     color: red;
@@ -125,7 +108,7 @@ html, body {
     height: 100vh;
     color: #fff;
     padding: 3vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 20px;
     /* display: flex;
     flex-direction: column;
@@ -136,11 +119,18 @@ html, body {
     font-size: 2vw;
     text-transform: uppercase;
 }
+#impact-1{
+
+}
+#impact-2{
+ display: none;
+}
+
 .impact{
     display: flex;
     /* flex-direction:row-reverse; */
     gap: 15vw;
-    padding: 2vw;
+    padding: 1.5vw;
     height: 30%;  
     margin: 1vw; 
 }
@@ -177,6 +167,10 @@ html, body {
     font-size: 1.5vw;
     color: red;
     border-radius: 50%;
+
+}
+i:hover{
+    cursor: pointer;
 }
 #spirit{
     /* background-color: black; */
@@ -300,9 +294,59 @@ html, body {
     gap: 10vw;
    }
 
-@media only screen and (max-width: 600px) {
+/* Responsive Part */
+
+@media screen and (max-width: 600px){
     #nav{
+        justify-content: space-between;
+        padding: 0%;
+        margin: 0 10px;
+    }
+    #nav a{
         display: none;
+        
+    }
+    #logo{
+        display: flex;
+        padding: 5px;
+    }
+    .ri-menu-line{
+        display: block;
+        font-size: 25px;
+    }
+    #hero{
+        padding: 5vw;
+    }
+    .hero-logo img{
+        /* margin-top: 10%; */
+        width: 50vw;
+    }
+    .hero-text{
+        font-size: 1.5vw;
+    }
+    #about-section{
+        padding: 2vw;
+        height: 60vh;
+    }
+    #about-section h1{
+        font-size: 6vw;
+    }
+    .about-content{
+        flex-direction: column;
+        /* height: 30vh; */
+        /* align-items: flex-start; */
+        justify-content: flex-start;
+        gap: 0;
     }
     
+    .about-content p{
+        font-size: 2vw;
+        width: 80%;
+    }
+    .about-content img{
+        padding: 2vw;
+        width: 50vw;
+        height: 50vw;
+        /* margin-left: 5vw; */
+    }
 }
