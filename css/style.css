@@ -124,8 +124,10 @@ html, body {
 }
 #impact-1{
 
+    height: 100%;
 }
 #impact-2{
+    height: 100%;
  display: none;
 }
 
@@ -200,38 +202,45 @@ i:hover{
 }
 #contact-section{
     display: flex;
-    min-height: 50vh;
+    min-height: 60vh;
     border-radius: 20px;
     background-color: black;
     color: #fff;
     padding: 1vw;
+    gap: 10vw;
 }
 #contact-section h1{
     position: absolute;
+    font-size: 3vw;
+    
 }
 #contact-left{
-    width: 50%;
+    display: flex;
+    width: 30%;
     
 }
 #contact-left img{
-    width: 40vw;
-    
+    width: 30vw;
+    height: 30vw;
 }
 #contact-right{
+    width: 70%;
     color: #fff;
 }
 
 .form {
-    width: 500px;
-    height: 450px;
+    width: 90%;
+    height: 90%;
     background: #ee8e8e;
+    color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
     /* margin: calc(50vh - 220px) auto; */
     padding: 20px 30px;
-    max-width: calc(100vw - 40px);
+    /* max-width: calc(100vw - 40px); */
     box-sizing: border-box;
       position: relative;
+      font-size: 3vw;
   }
   
   input {
@@ -253,7 +262,7 @@ i:hover{
     display: block;
     margin: 28px 0 0;
     font-size: 14px;
-    color: #5a5a5a;
+    /* color: #5a5a5a; */
   }
   button {
     float: right;
@@ -261,8 +270,8 @@ i:hover{
     /* margin: 8px 0 0; */
     font-family: "Montserrat", sans-serif;
     border: 2px solid #78788c;
-    background: 0;
-    color: #5a5a6e;
+    background: #ee8e8e;
+    color: #fff;
     cursor: pointer;
     transition: all 0.3s;
   }
@@ -325,12 +334,12 @@ i:hover{
         width: 50vw;
     }
     .hero-text{
-        font-size: 1.5vw;
+        font-size: 1.2vw;
     }
     #about-section{
         padding: 2vw;
-        height: 60vh;
-        margin-bottom: 20vw; 
+        min-height: 50vh;
+        /* margin-bottom: 5vw;  */
     }
     #about-section h1{
         font-size: 6vw;
@@ -345,7 +354,7 @@ i:hover{
     
     .about-content p{
         font-size: 2vw;
-        width: 80%;
+        width: 90%;
     }
     .about-content img{
         padding: 2vw;
@@ -353,4 +362,115 @@ i:hover{
         height: 40vw;
         /* margin-left: 5vw; */
     }
+    #Impact-section{
+        height: 60vh;
+    }
+    #spirit{ 
+        /* padding: 0vw 25vw; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+       
+      }
+      #spirit-vid{
+        display: flex;
+            flex-direction: column;
+            gap: 1vw;
+      }
+      #spirit-vid video{
+        
+        width: 100%;
+        border-radius: 10px;
+
+      
+      }
+      #spirit h1{
+        font-size: 5vw;
+        color: red;
+      }
+      #spirit h3{
+        display: flex;
+        text-align: center;
+            font-size: 2vw;
+      }
+      #spirit-vid p {
+        text-align: center;
+        font-size: 3vw;
+      }
+    
+      #spirit-vid p span{
+        font-size: 5vw;
+      }
+      .impact img {
+        border-radius: 5%;
+        width: 30vw;
+        height: 20vw;
+        margin-left: 0vw;
+      }
+      #contact-section {  
+        flex-direction: column;
+        height: 100%;
+    }
+    #contact-section h1{
+        display: none;
+    /* position: absolute; */
+    font-size: 5vw;
+    
+}
+    #contact-left {
+        display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+#contact-left img {
+  width: 60%;
+  /* margin-top: 10vw; */
+}
+#contact-right {
+  color: #fff;
+  width: 100%;
+}
+#contact-right h1{
+    display: block;
+}
+.form {
+  width: 100%;
+  /* height: 450px; */
+  background: #ee8e8e;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  /* margin: calc(50vh - 220px) auto; */
+  padding: 20px 30px;
+  /* max-width: calc(100vw - 40px); */
+  box-sizing: border-box;
+  position: relative;
+}
+#footer{
+/* flex-direction: column; */
+/* min-height: 50vh; */
+gap: 1vw;
+font-size: 2vw;
+ }
+ #head-office{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+  
+    
+ }
+ #head-office p{
+    margin: -10px;
+    padding: 0;
+ }
+ #branch-office{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+ }
+ #branch-office p{
+    margin: -10px;
+    padding: 0;
+ }
 }
