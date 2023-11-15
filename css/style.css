@@ -201,11 +201,23 @@ i:hover{
 }
 #spirit-vid{
     display: flex;
-    gap: 15vw;
+    /* gap: 15vw; */
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 #spirit-vid video{
-    width: 30vw;
+    width: 200%;
+    height: 100%;
+    border-style: solid;
+    border-radius: 10px;
 
+}
+#spirit-vid p {
+    text-align: center;
+    font-size: 1.5vw;
+  margin-left: 20vw;
 }
 #spirit-vid p span{
     color: red;
@@ -330,6 +342,7 @@ i:hover{
         text-decoration: underline;
     }
    #social{
+    margin-top: 2vw;
     display: flex;
     align-items: center;
     gap: 2vw;
@@ -402,8 +415,14 @@ i:hover{
         /* margin-left: 5vw; */
     }
     #Impact-section{
-        height: 60vh;
+        height: 50vh;
     }
+    #impact-nav {
+                margin-top: -2vw;
+      }
+      .impact{
+        padding: 5vw;
+      }
     #spirit{ 
         /* padding: 0vw 25vw; */
         display: flex;
@@ -519,6 +538,7 @@ font-size: 2.5vw;
  #social{
     display: flex;
     gap: 5vw;
+    margin-top: 10vw;
  }
  #social a{
     font-size: 5vw;
