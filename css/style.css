@@ -6,6 +6,11 @@ html, body {
 	background: #fff;
 	color: #000;
 }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 ,p ,.p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
 #main{
     min-height: 100vh;
     padding: 0% 5%;
@@ -58,7 +63,10 @@ html, body {
     width: 35vw;
 }
 .hero-soon{
-    width: 20vw;
+    /* width: 100%; */
+}
+.hero-soon img{
+   width: 30vw;
 }
 .hero-text{
     font-size: 1.2vw;
@@ -347,9 +355,12 @@ i:hover{
         display: flex;
         padding: 5px;
     }
+    #logo img{
+        width: 20vw;
+    }
     .ri-menu-line{
         display: block;
-        font-size: 25px;
+        font-size: 15px;
     }
     #hero{
         padding: 5vw;
@@ -358,6 +369,9 @@ i:hover{
         /* margin-top: 10%; */
         width: 50vw;
     }
+    .hero-soon img{
+  /* width: 15vw; */
+}
     .hero-text{
         font-size: 1.2vw;
     }
@@ -473,29 +487,40 @@ i:hover{
   position: relative;
 }
 #footer{
-/* flex-direction: column; */
-/* min-height: 50vh; */
+flex-direction: column;
+min-height: 50vh;
 gap: 1vw;
-font-size: 2vw;
+font-size: 2.5vw;
+ }
+ #address{
+    display: flex;
+    flex-direction: column;
  }
  #head-office{
-   width: 50%;
+   width: 100%;
    display: flex;
    flex-direction: column;
   
     
  }
  #head-office p{
-    margin: -10px;
+    margin: -5px;
     padding: 0;
  }
  #branch-office{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
  }
  #branch-office p{
-    margin: -10px;
+    margin: -5px;
     padding: 0;
+ }
+ #social{
+    display: flex;
+    gap: 5vw;
+ }
+ #social a{
+    font-size: 5vw;
  }
 }
