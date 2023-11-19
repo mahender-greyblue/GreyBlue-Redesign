@@ -143,7 +143,8 @@ h2{
     text-transform: uppercase;
 }
 #impact-1{
-
+    overflow-y:auto;
+    overflow-x: hidden;
     height: 100%;
 }
 #impact-2{
@@ -345,6 +346,9 @@ i:hover{
   }
  
    */
+   #captcha{
+    display: flex;
+   }
 
    #footer{
 
@@ -480,6 +484,9 @@ i:hover{
     }
     #Impact-section{
         height: 90vh;
+    }
+    #Impact-section h1{
+        text-align: center;
     }
     #impact-nav {
         display: none;
