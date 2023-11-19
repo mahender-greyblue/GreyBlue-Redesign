@@ -80,11 +80,12 @@ h2{
 }
 #hero-vid{
     position: absolute;
-    margin-bottom: 100px;
+    display: flex;
+    top: 25vw;
     display: none;
 }
 #hero-vid video{
-    width: 30vw;
+    /* width: 30vw; */
     
 }
 
@@ -179,13 +180,14 @@ h2{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: left;
 }
 .impact-text h2{
     color: #ff375a;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 .impact-text p{
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 #impact-nav{
@@ -353,6 +355,7 @@ i:hover{
     margin-top: 20px;
     color: white;
     padding: 2vw 6vw;
+    font-size: 0.8vw;
     /* display: flex; */
     /* gap: 10vw; */
    }
@@ -370,16 +373,24 @@ i:hover{
           
     }
     #head-office p{
-        margin-top: -30px;
+        margin-top: -25px;
     }
     #branch-office{
         width: 45%;
     }
     #branch-office p{
-        margin-top: -30px;
+        margin-top: -25px;
+    }
+    #head-office h2{
+        text-decoration: underline;
+        margin-top: 1vw;
+    }
+    #head-office a{
+       text-decoration: none;
+       color: #fff;
     }
    #social{
-    margin-top: 2vw;
+    margin-top: 1vw;
     display: flex;
     align-items: center;
     gap: 2vw;
@@ -413,22 +424,36 @@ i:hover{
         font-size: 15px;
     }
     #hero{
+        min-height: 30vh;
         padding: 5vw;
     }
+    #hero-vid{
+        position: relative  ;
+        /* display: flex; */
+        top: 0;
+        display: block;
+    }
+    #hero-vid video{
+        width: 80vw;
+        
+    }
     .hero-logo img{
-        /* margin-top: 10%; */
+        margin-top: 5%;
         width: 50vw;
     }
     .hero-soon img{
+        margin-top: 10%;
   /* width: 15vw; */
 }
     .hero-text{
+        margin-top: 5%;
         font-size: 1.2vw;
     }
     #about-section{
-        padding: 2vw;
+        padding: 10vw 5vw;
         min-height: 50vh;
         /* margin-bottom: 5vw;  */
+        text-align: center;
     }
     #about-section h1{
         text-align: center;
@@ -454,9 +479,10 @@ i:hover{
         /* margin-left: 5vw; */
     }
     #Impact-section{
-        height: 100vh;
+        height: 90vh;
     }
     #impact-nav {
+        display: none;
                 margin-top: -2vw;
       }
       .impact{
@@ -465,8 +491,8 @@ i:hover{
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
-        /* justify-content: center; */
-        /* padding: 2vw; */
+        justify-content: center;
+        padding: 0;
         gap: 5vw;
       }
       .impact:nth-child(2n+1) {
@@ -474,6 +500,16 @@ i:hover{
         flex-direction: column-reverse;
         align-items: center;
         /* justify-content: center; */
+      }
+      .impact-img {
+        width: 100%;
+      }
+      .impact-img img {
+        width: 100%;
+        height: 150%;
+      }
+      .impact-text {
+        width: 80%;
       }
 
     #spirit{ 
@@ -517,22 +553,22 @@ i:hover{
       }
       .impact img {
         border-radius: 5%;
-        width: 50vw;
+        width: 60vw;
         height: 30vw;
         margin-left: 0vw;
       }
       .impact-text {
         display: flex;
         flex-direction: column;
-        gap: -50vw;
+        /* gap: -50vw; */
       }
       .impact-text h2 {
        
-        font-size: 2.5vw;
+        font-size: 2.2vw;
       }
       .impact-text p {
        margin-top: -20px;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
       }
       #contact-section {  
         margin-top: 5vw;
@@ -572,14 +608,15 @@ i:hover{
     }
     #footer{
     flex-direction: column;
-    min-height: 50vh;
+    min-height: 30vh;
     gap: 1vw;
     font-size: 2.5vw;
+    border-radius: 10px;
     }
  #address{
     display: flex;
     flex-direction: column;
-    gap: 6vw;
+    gap: 3vw;
  }
  #head-office{
    width: 100%;
@@ -589,8 +626,12 @@ i:hover{
     
  }
  #head-office p{
-    margin: -10px;
-    padding: 0;
+    margin-top: -20px;
+    padding: 0; 
+ }
+ #head-office a{
+    margin-top: 1vw;
+    padding: 0; 
  }
  #branch-office{
     display: flex;
@@ -598,13 +639,16 @@ i:hover{
     width: 100%;
  }
  #branch-office p{
-    margin: -5px;
+    margin-top: -20px;
     padding: 0;
  }
+ #branch-office h2{
+     margin-top: 6vw;
+}
  #social{
     display: flex;
     gap: 5vw;
-    margin-top: 10vw;
+    margin-top: 2vw;
  }
  #social a{
     font-size: 5vw;
