@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreyBlue Ventures Pvt Ltd</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -30,7 +30,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWPPDX8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="main">
         <div id="nav">
@@ -149,6 +150,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>   
             </div>  
         </div>                 -->
+        
     </div>
      <div id="spirit">
             <h1>spirit of saathi</h1>
@@ -162,15 +164,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
 
      </div>
-        <div id="contact-section">
+    <div id="contact-section">
             <h1>Contact Us</h1>
             <div id="contact-left">
                 <img src="assets/images/logo-gif.gif" alt="">
             </div>
             <div id="contact-right">
-                <h1>Let's Connect</h1>
-                <form class="form">
-                    <!-- <h2>CONTACT US</h2> -->
+                <!-- <h1>Let's Connect</h1> -->
+                <form action="send.php" class="contFrm" method="POST">
+                    <div>
+                      <div>
+                        <input type="text" name="name" placeholder="Your Name" class="inptFld" required />
+                      </div>
+          
+                      <div>
+                        <input type="email" name="email" placeholder="Email Address" class="inptFld" required />
+                      </div>
+          
+                      <div>
+                        <input type="tel" name="phone" placeholder="Phone Number" class="inptFld" required />
+                      </div>
+          
+                               
+                      <div>
+                        <textarea class="inptFld" rows="" cols="" name="msg" placeholder="Your Message..." required></textarea>
+                      </div>
+          
+                     
+                      <div>
+                        <!--<input type="submit" name="send" value="SUBMIT" class="inptBtn" />-->
+                        <!--<input class="inptBtn g-recaptcha" data-sitekey="6LdiqwEnAAAAAB3NaydTlDNFba0mlZ_uBIP4Ou24" data-callback='onSubmit'data-action='submit' value="SUBMIT" name="send" />-->
+                      <!-- <input name="send" class="g-recaptcha inptBtn" data-sitekey="6LdiqwEnAAAAAB3NaydTlDNFba0mlZ_uBIP4Ou24" value="SUBMIT" data-callback='onSubmit'data-action='submit' />-->
+                      <!--</div>-->
+                        <div id="vrfy" class="g-recaptcha" data-sitekey="6LdiqwEnAAAAAB3NaydTlDNFba0mlZ_uBIP4Ou24"></div> <br/>
+        
+                      <input type="submit" name="send" value="SUBMIT" class="inptBtn" data-sitekey="6LdiqwEnAAAAAB3NaydTlDNFba0mlZ_uBIP4Ou24" />
+                    </div>
+                  </form>
+                <!-- <form class="form">
+                    <h2>CONTACT US</h2>
                     <p type="Name:"><input placeholder="Write your name here.."></input></p>
                     <p type="Phone:"><input placeholder="Write your phone number.."></input></p>
                     <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
@@ -186,46 +218,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                     <button>Send Message</button>
                     
-                  </form>
+                  </form> -->
             </div>
-        </div>
-        <div id="footer">
-            <div id="address">
-                <div id="head-office">
-                    <h1>Address</h1>
-                    <p>
-                        503 Tower A , 5th Floor, Millennium Plaza, Sector-27, <br>
-                        Gurugram, Haryana 22009 India.
-                    </p>
-                    <!-- <h2>Reach Out to US</h2> -->
-                    <a href="mailto:connect@greyblue.in?subject=General Inquiry about Saathi">General Inquiries: connect@greyblue.in</a>
-                    <br>
-                    <a href="mailto:career@greyblue.in?subject=Inquiry Regarding Saathi Job Opportunities">HR Department: career@greyblue.in</a> 
-                    
-                    
-                </div>
-                <div id="social">
-                    <h1>Follow Us:</h1>
-                    <a href=""><i class="ri-linkedin-box-line"></i></a>
-                    <a href=""><i class="ri-youtube-line"></i></a>
-                    <a href=""><i class="ri-instagram-line"></i>
-                    </a>
-                </div>
-
-                <!-- <div id="branch-office">
-                    <h1>Branch Office</h1>
-                    <p>2nd Floor, 51/8/4  Inderbaba Marg Lane No. 2 Rajpur Road, <br> Dehradun, Uttarakhand 248001 India.</p>
-                    
-                    
-                    
-                    
-                </div> -->
-            </div>
-            
-            
-
-        </div>
     </div>
+</div>
+       
+    <div id="footer">
+        <div id="address">
+            <div id="head-office">
+                <h1>Address</h1>
+                <p>
+                    503 Tower A , 5th Floor, Millennium Plaza, Sector-27, <br>
+                    Gurugram, Haryana 22009 India.
+                </p>
+                <!-- <h2>Reach Out to US</h2> -->
+                <a href="mailto:connect@greyblue.in?subject=General Inquiry about Saathi">General Inquiries: connect@greyblue.in</a>
+                <br>
+                <a href="mailto:career@greyblue.in?subject=Inquiry Regarding Saathi Job Opportunities">HR Department: career@greyblue.in</a> 
+                
+                
+            </div>
+            <div id="social">
+                <h1>Follow Us:</h1>
+                <a href=""><i class="ri-linkedin-box-line"></i></a>
+                <a href=""><i class="ri-youtube-line"></i></a>
+                <a href=""><i class="ri-instagram-line"></i>
+                </a>
+            </div>
+
+            <!-- <div id="branch-office">
+                <h1>Branch Office</h1>
+                <p>2nd Floor, 51/8/4  Inderbaba Marg Lane No. 2 Rajpur Road, <br> Dehradun, Uttarakhand 248001 India.</p>
+                
+                
+                
+                
+            </div> -->
+        </div>
+        
+        
+
+</div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
