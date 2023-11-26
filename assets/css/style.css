@@ -51,6 +51,7 @@ p{
     text-decoration: underline;
 }
 
+
 #hero{
     position: relative;
     display: flex;
@@ -455,6 +456,10 @@ i:hover{
 /* Responsive Part */
 
 @media screen and (max-width: 600px){
+    #main{
+    min-height: 100vh;
+    padding: 0%;
+}
     #nav{
         justify-content: space-between;
         padding: 0%;
@@ -548,7 +553,7 @@ i:hover{
         text-align: center;
         justify-content: center;
         padding: 0;
-        height: 25%;
+        height: 35%;
         gap: 5vw;
       }
       .impact:nth-child(2n+1) {
